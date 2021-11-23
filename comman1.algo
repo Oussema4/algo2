@@ -1,0 +1,18 @@
+ALGORITHM common1
+VAR
+    i:INTEGER;
+    tab1 : ARRAY_OF INTEGER[];
+    tab2 : ARRAY_OF INTEGER[];
+    common:INTEGER:=0;
+    unique:INTEGER:=0;
+BEGIN
+FOR i FROM 0 TO tab1.length-1   DO
+FOR j FROM 0 TO tab2.length-1   DO
+IF (tab1[i]=tab2[j]) THEN
+    common:=common+tab1[i]+tab2[j];
+    
+END_IF
+
+END_FOR
+END_FOR
+END

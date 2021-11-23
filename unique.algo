@@ -1,0 +1,40 @@
+ALGORITHM unique1
+VAR
+    i,j:INTEGER;
+    tab1 : ARRAY_OF INTEGER[];
+    tab2 : ARRAY_OF INTEGER[];
+    test: BOOLEAN;
+    unique:INTEGER:=0;
+BEGIN
+FOR i FROM 0 TO tab1.length-1   DO
+FOR j FROM 0 TO tab2.length-1   DO
+IF (tab1[i]=tab2[j]) THEN
+    test:=true;
+  break;
+    
+END_IF
+END_FOR
+IF ((test=false) ) THEN
+    unique:=unique+tab1[i];
+END_IF
+
+FOR j FROM 0 TO tab2.length-1   DO
+FOR i FROM 0 TO tab1.length-1   DO
+   IF (tab2[j]=tab1[i]) THEN
+          tets:=true;
+          break;
+        END_IF
+    END_FOR
+    IF (test=FALSE) THEN
+        unique:=unique+t2[j];
+    END_IF
+    END_FOR
+    
+END
+
+
+
+
+
+
+
