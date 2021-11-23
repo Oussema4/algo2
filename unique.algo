@@ -1,4 +1,4 @@
-ALGORITHM unique1
+ALGORITHM uni1
 VAR
     i,j:INTEGER;
     tab1 : ARRAY_OF INTEGER[];
